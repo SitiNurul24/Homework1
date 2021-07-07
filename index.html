@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf Apps</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="head_bar">
+        <h1 class="head_bar__title">Create Playlist</h1>
+    </header>
+    <div align="center">
+
+        <img id="gambar" src="https://d17ivq9b7rppb3.cloudfront.net/original/commons/homepage-dicoding-challenge-illustration.png" alt="Its a rubiks cube!" width="150" height="100">
+        <main>
+            <section class="input_section">
+                <h2>Masukkan Musik Baru</h2>
+                <form id="inputMusic">
+                    <div class="input">
+                        <label for="inputMusicTitle">Judul</label>
+                        <input id="inputMusicTitle" type="text" required>
+                    </div>
+                    <div class="input">
+                        <label for="inputMusicAuthor">Artis</label>
+                        <input id="inputMusicAuthor" type="text" required>
+                    </div>
+                    <div class="input">
+                        <label for="inputMusicAlbum">Album</label>
+                        <input id="inputMusicAlbum" type="number" required>
+                    </div>
+                    <button id="musicSubmit" type="submit"><span>Submit</span></button>
+                </form>
+            </section>
+            <script>
+                function welcome() {
+                    alert("Sim salabim muncullah elemen-elemen HTML!")
+                    const contents = document.querySelector(".contents");
+                    contents.removeAttribute("hidden");
+                }
+
+                // kita akan menulis kode menggunakan addEventListener di sini
+                window.addEventListener('load', welcome);
+            </script>
+</body>
+
+</html>
